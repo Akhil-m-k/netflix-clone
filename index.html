@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/pngegg.png" />
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/d53d2b527f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- head section -->
+    <header class="hero px-1 px-md-0">
+      <!-- navbar section -->
+      <nav class="navbar navbar-expand bg-trasparent">
+        <div class="container-lg container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/pngwing.com.png"
+              class="img-fluid py-2 px-0"
+              width="160px"
+              height="80px"
+              alt=""
+            />
+          </a>
+          <div class="navbar-collapse">
+            <ul class="navbar-nav ms-auto pe-2">
+              <li class="nav-item me-md-4 me-2 select__container">
+                <div class="languge__icon text-white">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="default-ltr-cache-4z3qvp e1svuwfo1"
+                    data-name="Languages"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <select class="languge__selector text-center" name="language-selector">
+                  <option value="English">English</option>
+                  <option value="Hindi">हिन्दी</option>
+                </select>
+                <span class="downarrow__icon__container"
+                  ><i class="fa-solid fa-caret-down text-white arrow__icon"></i
+                ></span>
+              </li>
+              <li class="nav-item">
+                <button class="sign__in__btn btn">Sign In</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar section -->
+
+      <!-- introduction section -->
+      <section class="inroduction__section d-flex justify-content-center align-items-center">
+        <div
+          class="container-lg container-fluid d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1 class="text-white text-center">
+            The biggest Indian hits. Ready to watch here from ₹ 149.
+          </h1>
+          <h4 class="text-white text-center pt-3">
+            Join today. Cancel anytime.
+          </h4>
+          <p class="text-white text-center pt-3">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <form
+            action=""
+            class="get__started d-flex justify-content-center align-items-center flex-sm-row flex-column"
+          >
+            <input
+              type="text"
+              class="email flex-grow-1 w-100"
+              name="email"
+              placeholder="Email address"
+            />
+            <button type="submit" class="get__started__btn flex-grow-0">
+              Get Started
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-mirrorinrtl="true"
+                class="default-ltr-cache-4z3qvp e1svuwfo1 pb-1"
+                data-name="ChevronRight"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+    </header>
+    <!-- end of head section -->
+
+    <!--///////// showcase sections /////////-->
+    <!-- showcase-1 -->
+    <section class="showcase__1 showcase">
+      <div class="container-md container-fluid">
+        <div class="row">
+          <div
+            class="content__side col-lg-6 col-12 d-flex justify-content-center align-items-baseline flex-column"
+          >
+            <h1 class="text-white mb-4">Enjoy on your TV</h1>
+            <p class="text-white">
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div
+            class="img__side col-lg-6 col-12 d-flex justify-content-center align-items-center"
+          >
+            <div class="special">
+              <img src="images/tv.png" class="img-fluid w-100" />
+              <video
+                src="video/video-tv-in-0819.m4v"
+                width="75%"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of showcase__1 -->
+
+    <!-- showcase__2 -->
+    <section class="showcase__2 showcase">
+      <div class="container-md container-fluid">
+        <div class="row">
+          <div
+            class="img__side col-lg-6 col-12 order-2 order-lg-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="special">
+              <img src="images/mobile-0819.jpg" class="img-fluid w-100" />
+              <div class="download__animation d-flex justify-content-around align-items-center">
+                <img
+                  src="images/boxshot.png"
+                  class="img-fluid h-100 flex-grow-0"
+                  alt=""
+                />
+                <div class="flex-grow-1 pt-3 d-flex justify-content-center flex-column align-items-start">
+                  <h5>Stranger Things</h5>
+                  <p class="text-primary">Downloading...</p>
+                </div>
+                <img
+                  src="video/download-icon.gif"
+                  width="50px"
+                  class="flex-grow-0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="content__side col-lg-6 col-12 order-1 order-lg-0 d-flex justify-content-center align-items-baseline flex-column"
+          >
+            <h1 class="text-white mb-4">
+              Download your shows to watch offline
+            </h1>
+            <p class="text-white">
+              Save your favourites easily and always have something to watch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of showcase__2 -->
+    <!-- showcase__3 -->
+    <section class="showcase__3 showcase">
+      <div class="container-md container-fluid">
+        <div class="row">
+          <div
+            class="content__side col-lg-6 col-12 d-flex justify-content-center align-items-baseline flex-column"
+          >
+            <h1 class="text-white mb-4">Watch everywhere</h1>
+            <p class="text-white">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </p>
+          </div>
+          <div
+            class="img__side col-lg-6 col-12 d-flex justify-content-center align-items-center"
+          >
+            <div class="special">
+              <img
+                src="images/device-pile-in.png"
+                class="img-fluid w-100 h-75"
+              />
+              <video
+                src="video/video-devices-in.m4v"
+                width="65%"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of showcase__3 -->
+
+    <!-- showcase__4 -->
+    <section class="showcase__4 showcase">
+      <div class="container-md container-fluid">
+        <div class="row">
+          <div
+            class="img__side col-lg-6 col-12 order-2 order-lg-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="special">
+              <img src="images/children.png" class="img-fluid w-100" />
+            </div>
+          </div>
+          <div
+            class="content__side col-lg-6 col-12 order-1 order-lg-0 d-flex justify-content-center align-items-baseline flex-column"
+          >
+            <h1 class="text-white mb-4">Create profiles for kids</h1>
+            <p class="text-white">
+              Send children on adventures with their favourite characters in a
+              space made just for them—free with your membership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of showcase__4 -->
+    <!-- end of showcase -->
+    <!-- Accordion -->
+    <section class="accordion__section py-5 px-2 px-lg-0">
+      <div class="container-lg py-4 container-fluid">
+        <h1 class="text-center text-white mb-4">Frequently Asked Questions</h1>
+        <div class="row g-2">
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>What is Netflix?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                Netflix is a streaming service that offers a wide variety of
+                award-winning TV shows, movies, anime, documentaries and more –
+                on thousands of internet-connected devices.
+              </p>
+              <p>
+                You can watch as much as you want, whenever you want, without a
+                single ad – all for one low monthly price. There's always
+                something new to discover, and new TV shows and movies are added
+                every week!
+              </p>
+            </div>
+          </div>
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>How much does Netflix cost?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                streaming device, all for one fixed monthly fee. Plans range
+                from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+              </p>
+            </div>
+          </div>
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>Where can I watch?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                Watch anywhere, anytime. Sign in with your Netflix account to
+                watch instantly on the web at netflix.com from your personal
+                computer or on any internet-connected device that offers the
+                Netflix app, including smart TVs, smartphones, tablets,
+                streaming media players and game consoles.
+              </p>
+              <p>
+                You can also download your favourite shows with the iOS,
+                Android, or Windows 10 app. Use downloads to watch while you're
+                on the go and without an internet connection. Take Netflix with
+                you anywhere.
+              </p>
+            </div>
+          </div>
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>How do I cancel?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                Netflix is flexible. There are no annoying contracts and no
+                commitments. You can easily cancel your account online in two
+                clicks. There are no cancellation fees – start or stop your
+                account anytime.
+              </p>
+            </div>
+          </div>
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>What can I watch on Netflix?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                Netflix has an extensive library of feature films,
+                documentaries, TV shows, anime, award-winning Netflix originals,
+                and more. Watch as much as you want, anytime you want.
+              </p>
+            </div>
+          </div>
+          <div class="accordiom__item col-12">
+            <button class="accordion__btn w-100 text-start">
+              <span>Is Netflix good for kids?</span
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="accordion__icon__1"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-plus"
+                >
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line></svg
+                ><i class="fa-regular fa-x accordion__icon__2 d-none"></i
+              ></span>
+            </button>
+            <div class="accordion__body d-none">
+              <p>
+                The Netflix Kids experience is included in your membership to
+                give parents control while kids enjoy family-friendly TV shows
+                and films in their own space.
+              </p>
+              <p>
+                Kids profiles come with PIN-protected parental controls that let
+                you restrict the maturity rating of content kids can watch and
+                block specific titles you don’t want kids to see.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-5 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h5 class="text-white text-center mb-4">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h5>
+          <form
+            action=""
+            class="get__started d-flex justify-content-center align-items-center flex-sm-row flex-column"
+          >
+            <input
+              type="text"
+              class="email flex-grow-1 w-100"
+              name="email"
+              placeholder="Email address"
+            />
+            <button type="submit" class="get__started__btn flex-grow-0">
+              Get Started
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                data-mirrorinrtl="true"
+                class="default-ltr-cache-4z3qvp e1svuwfo1 pb-1"
+                data-name="ChevronRight"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of the accordion -->
+
+    <!-- footer section -->
+    <footer class="py-4 mx-0">
+      <div class="container-lg container-fluid px-lg-0 px-2">
+        <h6>Questions? Call <a href="">000-800-919-1694</a></h6>
+        <ul class="row">
+          <li class="col-6 col-lg-3"><a href="">FAQ</a></li>
+          <li class="col-6 col-lg-3"><a href="">Help Center</a></li>
+          <li class="col-6 col-lg-3"><a href="">Account</a></li>
+          <li class="col-6 col-lg-3"><a href="">Media Center</a></li>
+          <li class="col-6 col-lg-3"><a href="">Investor Relations</a></li>
+          <li class="col-6 col-lg-3"><a href="">Jobs</a></li>
+          <li class="col-6 col-lg-3"><a href="">Ways to Watch</a></li>
+          <li class="col-6 col-lg-3"><a href="">Terms of Use</a></li>
+          <li class="col-6 col-lg-3"><a href="">Privacy</a></li>
+          <li class="col-6 col-lg-3"><a href="">Cookie Preferences</a></li>
+          <li class="col-6 col-lg-3"><a href="">Corporate Information</a></li>
+          <li class="col-6 col-lg-3"><a href="">Contact Us</a></li>
+          <li class="col-6 col-lg-3"><a href="">Speed Test</a></li>
+          <li class="col-6 col-lg-3"><a href="">Legal Notices</a></li>
+          <li class="col-6 col-lg-3"><a href="">Only on Netflix</a></li>
+        </ul>
+
+        <div class="select__container">
+          <div class="languge__icon text-white">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="default-ltr-cache-4z3qvp e1svuwfo1"
+              data-name="Languages"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+          <select class="languge__selector text-center" name="language-selector">
+            <option value="English">English</option>
+            <option value="Hindi">हिन्दी</option>
+          </select>
+          <span class="downarrow__icon__container"
+            ><i class="fa-solid fa-caret-down text-white arrow__icon"></i
+          ></span>
+        </div>
+        <p class="mt-2 text-white">Netflix India</p>
+      </div>
+    </footer>
+
+    <!-- jQuery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script linking -->
+    <script src="script.js"></script>
+  </body>
+</html>

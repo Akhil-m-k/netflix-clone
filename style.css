@@ -1,0 +1,439 @@
+@import url(https://db.onlinewebfonts.com/c/0d49fc455f4a8951a42daf952412a713?family=Helvetica+Neue+Regular);
+:root {
+  --red-color: rgb(229, 9, 20);
+  --dark-gray: rgb(44, 44, 44);
+  --white-color:#fff;
+  --black-color:black;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--white-color);
+  font-family: "Helvetica Neue Regular";
+}
+.hero {
+  background-image: url("images/netflix-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: 30% 67%;
+  min-height: 700px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.894) 0,
+    rgba(0, 0, 0, 0.397) 70%,
+    rgba(0, 0, 0, 0.871) 100%
+  );
+}
+.hero::after,.showcase::after,
+.accordion__section::after  {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 7px;
+  background-color: rgb(52, 52, 52);
+}
+.select__container {
+  position: relative;
+  width: 126px;
+}
+.languge__selector {
+  border-radius: 4px;
+  background-color: #1b1a1a;
+  color: var(--white-color);
+  appearance: none;
+  width: 100%;
+  padding: 3px 14px 4px !important ;
+}
+.languge__selector option {
+  background-color: var(--white-color);
+}
+.downarrow__icon__container {
+  position: absolute;
+  bottom: 9px;
+  right: 15px;
+}
+.arrow__icon {
+  font-size: 12px;
+}
+.languge__icon {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+}
+.sign__in__btn {
+  background-color: var(--red-color) !important;
+  color: var(--white-color) !important;
+  padding: 6px 16px 7px !important ;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  white-space: noWrap;
+}
+/* end of navbar */
+
+/* introduction section */
+.inroduction__section {
+  min-height: 600px;
+}
+.inroduction__section .container-lg h1 {
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+.inroduction__section .container-lg h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.inroduction__section .container-lg p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+form.get__started {
+  width: 100%;
+  max-width: 570px;
+  gap: 10px;
+}
+.get__started input {
+  height: 56px;
+  background-color: #1b1a1aad;
+  border: 1px solid rgb(76, 75, 75);
+  padding-left: 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.get__started input::placeholder {
+  color: #cdcbcb;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.get__started__btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
+  height: 56px;
+  padding: 0px 25px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  white-space: noWrap;
+}
+
+/* end of head section */
+
+/*showcase section */
+.showcase {
+  position: relative;
+  background-color: var(--black-color);
+  font-family: "Helvetica Neue Regular";
+}
+.showcase .container-md {
+  padding: 80px 0px;
+}
+.showcase h1 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Helvetica Neue Regular";
+}
+.showcase .content__side p {
+  font-size: 24px;
+  font-weight: 100 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.showcase__1 .special,
+.showcase__3 .special {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.showcase__2 .special {
+  position: relative;
+}
+.download__animation {
+  position: absolute;
+  width: 100%;
+  max-width: 55%;
+  min-width: 15rem;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  bottom: 0px;
+  border-radius: 14px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  height: 22%;
+  border: 0.15rem solid gray;
+  column-gap: 10px;
+  padding: 10px;
+}
+.download__animation h5,
+.download__animation p {
+  white-space: noWrap;
+}
+.download__animation p {
+  margin-top: -10px;
+}
+.download__animation h5 {
+  font-size: 18px;
+}
+.showcase__1 video {
+  position: absolute;
+  inset: 0;
+  top: 20%;
+  left: 13%;
+  z-index: -1;
+}
+.showcase__3 video {
+  position: absolute;
+  inset: 0;
+  top: 8%;
+  left: 17%;
+  z-index: -1;
+}
+
+/* Accordian */
+.accordion__section {
+  background-color: var(--black-color);
+  position: relative;
+}
+.accordion__section .container-lg h1 {
+  font-family: "Helvetica Neue Regular";
+  font-size: 48px;
+  font-weight: 900;
+}
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px;
+  font-size: 26px;
+  background-color: var(--dark-gray);
+  color: var(--white-color);
+  border: none;
+}
+.accordion__btn:hover {
+  background-color: rgb(71, 71, 71);
+  transition: all 0.3s ease-in;
+}
+.accordion__body {
+  background-color: var(--dark-gray);
+  padding: 20px 30px;
+  margin-top: 1px;
+}
+.accordion__body p {
+  font-size: 24px;
+  color: var(--white-color);
+}
+.d-none {
+  display: none;
+}
+
+/* footer */
+footer {
+  background-color: var(--black-color);
+  padding: 0px 40px;
+}
+footer ul {
+  list-style-type: none;
+  row-gap: 10px;
+  padding: 0;
+}
+footer a,
+footer h6 {
+  color: #ffffffb3;
+}
+footer a:active {
+  color: red;
+}
+footer a:hover {
+  color: var(--white-color);
+}
+
+/* responsive design */
+@media screen and (max-width: 1280px) {
+  .download__animation {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .showcase .container-md {
+    padding: 40px 30px;
+  }
+  .showcase .row {
+    gap: 10px;
+  }
+  .showcase .row .col-12 {
+    align-items: center !important;
+  }
+  .showcase .content__side p {
+    font-size: 21px !important;
+    text-align: center;
+  }
+  .showcase h1 {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hero {
+    background-size: cover;
+    min-height: 550px;
+  }
+  .navbar-brand img {
+    max-width: 100px !important;
+  }
+  .inroduction__section {
+    padding: 30px 10px;
+    min-height: 450px;
+  }
+  .inroduction__section .container-lg h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .inroduction__section .container-lg h4,
+  .inroduction__section .container-lg p {
+    font-size: 18px;
+  }
+  .get__started {
+    max-width: 560px;
+  }
+  .get__started__btn,
+  .get__started input {
+    height: 48px !important;
+    border: 1px solid rgb(59, 58, 58);
+    font-size: 18px;
+    color: var(--white-color);
+  }
+  .download__animation {
+    height: 78px !important;
+    max-width: 60%;
+  }
+  .accordion__section .container-lg h1 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .accordion__btn {
+    font-size: 18px;
+  }
+  .accordion__icon__1 {
+    width: 24px;
+    height: 24px;
+  }
+  .accordion__body p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .showcase .content__side p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .download__animation {
+    height: 30%;
+    max-width: 75%;
+  }
+  .showcase{
+    overflow: hidden;
+  }
+  footer{
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 450px) {
+  .hero {
+    padding: 0px !important;
+  }
+  .showcase .container {
+    padding: 40px 20px;
+  }
+  .download__animation {
+    height: 72px;
+    max-width: 80%;
+    bottom: 0px !important;
+    transform: translate(-50%, -10%);
+  }
+  .download__animation h5 {
+    font-size: 14px;
+  }
+  .download__animation p {
+    white-space: noWrap;
+    font-size: 12px;
+  }
+  .select__container-md {
+    position: relative;
+    width: 100px;
+    padding: 0px !important;
+  }
+  .languge__selector {
+    padding: 2px 10px 3px !important ;
+  }
+  .downarrow__icon__container {
+    bottom: 5px;
+    right: 13px;
+  }
+  .arrow__icon {
+    font-size: 12px;
+  }
+  .languge__icon {
+    left: 8px;
+    top: 1px;
+  }
+  .sign__in__btn {
+    padding: 3px 10px 4px !important ;
+    font-size: 12px !important;
+    white-space: noWrap;
+  }
+}
+@media (max-width: 350px) {
+  .navbar-expand .container-lg {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+}
+@media screen and (max-width: 330px) {
+  .inroduction__section .container-lg h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .inroduction__section .container-lg h4,
+  .inroduction__section .container-lg p {
+    font-size: 15px;
+  }
+  .showcase__2 .container-md {
+    padding: 40px 0px;
+  }
+  .download__animation {
+    flex-wrap: nowrap;
+    height: 64px;
+    width: 280px;
+    bottom: 0px !important;
+    transform: translate(-50%, -5%);
+  }
+  .download__animation div {
+    width: 200px;
+  }
+  .accordion__section .container-lg h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .accordion__btn {
+    font-size: 15px;
+  }
+  .accordion__icon__1 {
+    width: 24px;
+    height: 24px;
+  }
+  .accordion__body p {
+    font-size: 15px;
+  }
+}
